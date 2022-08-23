@@ -1,0 +1,57 @@
+body{
+    font-family: 'Bungee', cursive; 
+    color: rgb(49, 49, 49);
+    margin: 20px;
+    user-select: none;
+}
+.main-menu, .board{
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 18px rgb(211, 211, 211);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+.main-menu{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.board{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 5px;
+}
+.p1, .p2, .p3{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.p1:active, .p2:active, .p3:active{
+    background-color: rgb(153, 0, 255);
+    color: rgb(255, 255, 255);
+}
+.b0, .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8{
+    grid-row: auto;
+    grid-column: auto;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.b0:hover, .b1:hover, .b2:hover, .b3:hover, .b4:hover, .b5:hover, .b6:hover, .b7:hover, .b8:hover{
+    background-color: rgb(153, 0, 255);
+    transition-duration: 0.1s;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+.select{
+    background-color: rgb(153, 0, 255);
+    color: rgb(255, 255, 255);
+}
